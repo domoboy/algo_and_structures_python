@@ -9,5 +9,5 @@ for el in user_number:
     multiplication_of_number *= int(el)
     sum_of_numbers += int(el)
 
-print(multiplication_of_number)
-print(sum_of_numbers)
+print(f'Сумма цифр числа {user_number} равна - {sum_of_numbers}')
+print(f'Произведение цифр числа {user_number} равно: {multiplication_of_number}')
