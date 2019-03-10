@@ -9,3 +9,20 @@
 Также сообщать пользователю о невозможности деления на ноль,
 если он ввел 0 в качестве делителя.
 """
+while True:
+    a = int(input('Введите первое число: '))
+    b = int(input('Введите второе число: '))
+    operat = input('Выберите действие: "+", "-", "/", "*" или "0" для выхода...')
+
+    if operat == '0':
+        break
+    elif operat == '+':
+        res = a + b
+    elif operat == '-':
+        res = a - b
+    elif operat == '*':
+        res = a * b
+    elif operat == '/':
+        res = a / b
+
+    print(res)
