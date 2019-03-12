@@ -5,3 +5,23 @@
 число, чем то, что загадано. Если за 10 попыток число не отгадано,
 то вывести загаданное число.
 """
+
+from random import random
+
+random_number = round(random() * 100)
+attempt = 1
+
+print('Загадано число. Угадайте его за менее чем 10 попыток!')
+
+while attempt <= 10:
+    user_input = int(input('Итак, ' + str(attempt) + '-ая попытка: '))
+    if user_input > random_number:
+        print(f'{user_input} больше, чем было загадано')
+    elif user_input < random_number:
+        print(f'{user_input} меньше, чем было загадано')
+    else:
+        print(f'ПОЗДРАВЛЯЮ! Вы угадали! Потребовалось {attempt} попыток')
+        break
+    attempt += 1
+else:
+    print(f'Попыток больше не осталось. Вы проиграли. Загадано {random_number}')
