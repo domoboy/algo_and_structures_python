@@ -7,7 +7,7 @@ for i in range(2, 100):  # список от 2 до 99
         if i % j == 0:  # если кратно
             data_array[j - 2] += 1  # записываю в список a, -2 как индекс, чтобы на правильное место записать
 
-quantity_value = 0  # завожу переменную для вывода инфы
+quantity_value = 0  # завожу переменную для вывода инфы.
 
 while quantity_value < len(data_array):  # пока перебираю массив
     print(f'Цифра {quantity_value + 2} встречается {data_array[quantity_value]} раз(a)')  # вывожу кол-во "встреч"

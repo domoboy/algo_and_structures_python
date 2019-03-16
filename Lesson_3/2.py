@@ -10,7 +10,7 @@ from random import random
 
 quantity = int(input('Укажите длину масссива: '))  # сколько значений
 
-data_array = [0] * quantity  # создаю массив
+data_array = [0] * quantity  # создаю массив.
 even_list = []  # массив для записи четных
 
 for i in range(quantity):

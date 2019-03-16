@@ -6,7 +6,7 @@
 
 from random import random
 
-# готовим массив
+# готовим массив.
 quantity = int(input('Укажите длину масссива: '))
 data_array = [0] * quantity
 
